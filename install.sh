@@ -19,7 +19,8 @@ clear
 
 source ./logo.sh 
 echo ""
-unzip corefiles
+unzip corefiles.zip
+rm -rf corefiles.zip
 cd corefiles
 mv FIX style
 chmod +x style

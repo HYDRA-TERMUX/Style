@@ -4,7 +4,7 @@
 ZIP_FILE="corefiles.zip"
 EXTRACT_FOLDER="corefiles"
 HIDDEN_FOLDER=".corefiles"
-BIN_PATH="$PREFIX/bin/style"
+BIN_PATH="$PREFIX/bin/FIX"
 
 # Check if the ZIP file exists
 if [ ! -f "$ZIP_FILE" ]; then
@@ -24,15 +24,15 @@ fi
 # Rename corefiles to .corefiles (hidden)
 mv "$EXTRACT_FOLDER" "$HIDDEN_FOLDER"
 
-# Move '1' to $PREFIX/bin and rename it to 'style'
+# Move '1' to $PREFIX/bin and rename it to 'FIX'
 if [ -f "$HIDDEN_FOLDER/1" ]; then
     mv "$HIDDEN_FOLDER/1" "$BIN_PATH"
     chmod +x "$BIN_PATH"
 fi
 
-# Rename '2.sh' to '.style' (hidden)
+# Rename '2.sh' to 'RUN.sh'
 if [ -f "$HIDDEN_FOLDER/2.sh" ]; then
-    mv "$HIDDEN_FOLDER/2.sh" "$HIDDEN_FOLDER/.style"
+    mv "$HIDDEN_FOLDER/2.sh" "$HIDDEN_FOLDER/RUN.sh"
 fi
 
 # Remove corefiles.zip after extraction

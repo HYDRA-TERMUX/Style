@@ -10,8 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const compressedImg = document.getElementById('compressedImg');
     const originalSize = document.getElementById('originalSize');
     const compressedSize = document.getElementById('compressedSize');
-    const comparisonSection = document.getElementById('comparisonSection');
     const divider = document.getElementById('divider');
+    const originalPlaceholder = document.getElementById('originalPlaceholder');
+    const compressedPlaceholder = document.getElementById('compressedPlaceholder');
     
     let compressedBlob = null;
     let isDragging = false;
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         divider.addEventListener('mousedown', function(e) {
             isDragging = true;
             document.body.style.cursor = 'ew-resize';
+            e.preventDefault(); // Prevent text selection
         });
         
         document.addEventListener('mousemove', function(e) {
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Touch support
         divider.addEventListener('touchstart', function(e) {
             isDragging = true;
+            e.preventDefault(); // Prevent scrolling
         });
         
         document.addEventListener('touchmove', function(e) {
@@ -59,6 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const percent = (x / containerRect.width) * 100;
             compressedImg.style.width = `${percent}%`;
             divider.style.left = `${percent}%`;
+            
+            e.preventDefault(); // Prevent scrolling
         });
         
         document.addEventListener('touchend', function() {
@@ -82,6 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const reader = new FileReader();
             reader.onload = function(e) {
                 originalImg.src = e.target.result;
+                originalImg.style.display = 'block';
+                originalPlaceholder.style.display = 'none';
                 originalSize.textContent = `Original: ${formatFileSize(file.size)}`;
                 
                 // Enable compress button
@@ -89,9 +96,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Reset compressed image
                 compressedImg.src = '';
+                compressedImg.style.display = 'none';
+                compressedPlaceholder.style.display = 'block';
                 compressedSize.textContent = 'Compressed: --';
                 downloadBtn.style.display = 'none';
-                comparisonSection.style.display = 'none';
+                divider.style.display = 'none';
             };
             reader.readAsDataURL(file);
         }
@@ -111,15 +120,19 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(result => {
                 compressedBlob = result.blob;
                 compressedImg.src = result.url;
+                compressedImg.style.display = 'block';
+                compressedPlaceholder.style.display = 'none';
                 compressedSize.textContent = `Compressed: ${formatFileSize(result.blob.size)}`;
                 downloadBtn.href = result.url;
                 
                 // Set download filename with appropriate extension
-                const ext = result.format === 'image/webp' ? 'webp' : 'jpg';
+                const ext = result.format === 'image/webp' ? 'webp' : 
+                           result.format === 'image/png' ? 'png' : 'jpg';
                 downloadBtn.download = `compressed.${ext}`;
+                downloadBtn.textContent = `Download (${ext.toUpperCase()})`;
                 
                 downloadBtn.style.display = 'inline-block';
-                comparisonSection.style.display = 'block';
+                divider.style.display = 'block';
                 compressBtn.textContent = 'Compress Image';
                 compressBtn.disabled = false;
                 
@@ -163,13 +176,18 @@ document.addEventListener('DOMContentLoaded', function() {
                     let width = img.width;
                     let height = img.height;
                     const maxDimension = 2000; // Max width/height
+                    const targetFileSize = 50000; // 50KB
                     
-                    if (width > height && width > maxDimension) {
-                        height *= maxDimension / width;
-                        width = maxDimension;
-                    } else if (height > maxDimension) {
-                        width *= maxDimension / height;
-                        height = maxDimension;
+                    // Calculate scaling factor needed to reach target size
+                    const scaleFactor = Math.sqrt(targetFileSize / (file.size * quality));
+                    const minScale = Math.min(1, scaleFactor);
+                    
+                    if (width > height && width > maxDimension * minScale) {
+                        height *= (maxDimension * minScale) / width;
+                        width = maxDimension * minScale;
+                    } else if (height > maxDimension * minScale) {
+                        width *= (maxDimension * minScale) / height;
+                        height = maxDimension * minScale;
                     }
                     
                     canvas.width = width;

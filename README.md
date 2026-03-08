@@ -1,403 +1,219 @@
-# HYDRA Script Obfuscator & Deobfuscator v2.0
+<div align="center">
 
-```
-██╗  ██╗██╗   ██╗██████╗ ██████╗  ██╗
-██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗███║
-███████║ ╚████╔╝ ██║  ██║██████╔╝╚██║
-██╔══██║  ╚██╔╝  ██║  ██║██╔══██╗ ██║
-██║  ██║   ██║   ██████╔╝██║  ██║ ██║
-╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝ ╚═╝
+<!-- Animated Header Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff00,50:008800,100:001100&height=200&section=header&text=HYDRA-TERMUX&fontSize=60&fontColor=00ff00&animation=twinkling&fontAlignY=38&desc=Rixon%20Xavier%20%7C%20Termux%20%7C%20Linux%20%7C%20Ethical%20Hacking&descAlignY=60&descSize=18&descColor=88ff88" />
 
-Multi-Layer Protection System
-Created by: HYDRA
-```
+<!-- Animated Typing SVG -->
+<a href="https://github.com/HYDRA-TERMUX">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2500&pause=800&color=00FF00&background=00000000&center=true&vCenter=true&multiline=false&repeat=true&width=600&height=60&lines=%F0%9F%90%8D+HYDRA-TERMUX+Activated...;%F0%9F%94%93+Breaking+Into+the+Matrix...;%F0%9F%92%BB+Termux+%7C+Linux+%7C+Python;%F0%9F%8E%AF+Ethical+Hacker+in+Progress...;%F0%9F%94%A5+Noob+%E2%86%92+Pro+Journey+Begins!;%E2%9A%A1+Hacking+Everything+Legal+%F0%9F%98%88" alt="Typing SVG" />
+</a>
 
-A powerful multi-layer script protection system designed for Termux. Protect your bash scripts from casual viewing and make reverse engineering extremely difficult.
+<br/>
 
----
+<!-- Profile views counter + animated badges -->
+<img src="https://komarev.com/ghpvc/?username=HYDRA-TERMUX&style=for-the-badge&color=00ff00&label=PROFILE+VIEWS" alt="Profile Views"/>
+&nbsp;
+<img src="https://img.shields.io/github/followers/HYDRA-TERMUX?style=for-the-badge&color=00ff00&labelColor=001100&label=FOLLOWERS" alt="Followers"/>
+&nbsp;
+<img src="https://img.shields.io/badge/STATUS-HACKING-00ff00?style=for-the-badge&labelColor=001100" />
 
-## 🔥 Features
-
-- **HYDRA Branding**: Custom branded interface with ASCII art logo
-- **3-Tier Protection System**: 
-  - Basic (3 layers) - Fast, lightweight
-  - Advanced (5 layers) - Recommended for most use cases
-  - Ultra (7+ layers) - Maximum security, military-grade
-- **Multiple Encoding Layers**: 
-  - Base64 encoding
-  - Hexadecimal encoding
-  - ROT13 Caesar cipher
-  - Reverse string obfuscation
-- **Random Variable Names**: All variables prefixed with "HYDRA_" + 8 random characters
-- **Anti-Tampering Protection**: Built-in integrity checks
-- **Deobfuscator Included**: Reverse your own protected scripts when needed
-- **Auto-Detection**: Deobfuscator automatically detects protection level
-- **Easy to Use**: Interactive menu-driven interface
-- **Termux Optimized**: Works perfectly in Android/Termux environment
+</div>
 
 ---
 
-## 📦 Installation
+<!-- Matrix-style animated separator -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
 
-1. Download both scripts to your Termux environment:
-   - `hydra_obfuscator.sh` - Protection tool
-   - `hydra_deobfuscator.sh` - Recovery tool
+<div align="center">
 
-2. Make them executable:
-```bash
-chmod +x hydra_obfuscator.sh hydra_deobfuscator.sh
-```
+## 🐍 Snake eating my contributions
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" />
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg" />
+</picture>
 
-## 🚀 Usage
-
-### HYDRA Obfuscator
-
-**Basic Usage:**
-```bash
-./hydra_obfuscator.sh <input_script> [output_script]
-```
-
-**Examples:**
-
-1. **Auto-generated output name:**
-```bash
-./hydra_obfuscator.sh myscript.sh
-```
-This creates `myscript_hydra.sh`
-
-2. **Custom output name:**
-```bash
-./hydra_obfuscator.sh myscript.sh protected.sh
-```
-
-3. **Interactive Mode:**
-When you run the obfuscator, you'll see the HYDRA banner and be prompted to choose:
-```
-[HYDRA] Select Protection Level:
-  1) Basic Protection (3 Layers - Fast)
-  2) Advanced Protection (5 Layers - Recommended)
-  3) Ultra Protection (7+ Layers - Maximum Security)
-
-[HYDRA] Enter choice [1-3]:
-```
-
-### HYDRA Deobfuscator
-
-**Basic Usage:**
-```bash
-./hydra_deobfuscator.sh <obfuscated_script> [output_script]
-```
-
-**Examples:**
-
-1. **Deobfuscate with auto-detection:**
-```bash
-./hydra_deobfuscator.sh protected_hydra.sh
-```
-This creates `protected_deobfuscated.sh`
-
-2. **Custom output name:**
-```bash
-./hydra_deobfuscator.sh protected_hydra.sh original.sh
-```
-
-The deobfuscator will **automatically detect** the protection level (Basic/Advanced/Ultra) and apply the correct reverse engineering process.
+</div>
 
 ---
 
-## 🛡️ Protection Levels Explained
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30"> About Me
 
-### 1. Basic Protection (3 Layers)
-**Process:**
-1. Base64 encode entire script
-2. Reverse the string
-3. Base64 encode again
-
-**Use Cases:**
-- Quick protection for simple scripts
-- When file size matters
-- When you need fast obfuscation/deobfuscation
-
-**Security Level:** ⭐⭐☆☆☆
-
----
-
-### 2. Advanced Protection (5 Layers) ⭐ RECOMMENDED
-**Process:**
-1. Base64 encode
-2. Hexadecimal encode
-3. Reverse the string
-4. ROT13 cipher
-5. Final Base64 encode
-
-**Additional Features:**
-- Anti-debugging code injection
-- Tampering detection
-- Junk variables for confusion
-
-**Use Cases:**
-- Protecting API keys and secrets
-- Commercial scripts
-- Scripts with sensitive logic
-
-**Security Level:** ⭐⭐⭐⭐☆
-
----
-
-### 3. Ultra Protection (7+ Layers) 🔒 MAXIMUM
-**Process:**
-1. Base64 encode
-2. ROT13 cipher
-3. Reverse the string
-4. Hexadecimal encode
-5. Base64 encode
-6. Reverse again
-7. Final Base64 encode
-
-**Additional Features:**
-- Multiple integrity checks
-- Decoy code injection
-- Hash verification simulation
-- Anti-tampering warnings
-- Maximum variable obfuscation
-
-**Use Cases:**
-- Highly sensitive scripts
-- Proprietary algorithms
-- Maximum security requirements
-- When reverse engineering must be prevented
-
-**Security Level:** ⭐⭐⭐⭐⭐
-
----
-
-## 💡 How It Works
-
-### Obfuscation Example
-
-**Original Script (example.sh):**
-```bash
-#!/bin/bash
-echo "Hello HYDRA!"
-API_KEY="secret_key_12345"
-echo "API: $API_KEY"
-```
-
-**After Basic Obfuscation:**
-```bash
-#!/data/data/com.termux/files/usr/bin/bash
-#═══════════════════════════════════════
-# Protected by HYDRA Obfuscator v2.0
-# HYDRA Multi-Layer Protection Active
-#═══════════════════════════════════════
-HYDRA_K8F3N2Q1=$((RANDOM % 9999))
-HYDRA_M7P2X9W4='IyEvYmluL2Jhc2gKZWNobyAiSGVsbG8gSFlEUkEhIgpBUElfS0VZPSJ...'
-HYDRA_R5T8N3K6=$(echo "${HYDRA_M7P2X9W4}" | base64 -d)
-HYDRA_Q9L4M7P2=$(echo "${HYDRA_R5T8N3K6}" | rev)
-HYDRA_Z3X8K5N1=$(echo "${HYDRA_Q9L4M7P2}" | base64 -d)
-# HYDRA Protection: Do not modify below this line
-eval "${HYDRA_Z3X8K5N1}"
-# HYDRA_SIGNATURE_END
-```
-
----
-
-## 🎯 Use Cases
-
-### ✅ What HYDRA Protects Against:
-- Casual code reading and copying
-- Quick glances at sensitive information
-- Automated keyword scanning
-- Basic script analysis
-- Copy-paste theft
-- Source code exposure
-
-### ⚠️ What HYDRA Does NOT Protect Against:
-- Determined professional reverse engineering
-- Advanced deobfuscation tools (without the HYDRA deobfuscator)
-- Runtime debugging
-- Memory analysis
-- Expert cryptanalysis
-
----
-
-## 📝 Best Practices
-
-### DO:
-✅ Always keep an unobfuscated backup of your original script  
-✅ Test the obfuscated script before deploying  
-✅ Use Advanced or Ultra mode for sensitive scripts  
-✅ Combine with file permissions for added security  
-✅ Document which protection level you used  
-✅ Use the deobfuscator only when you need to modify the script  
-
-### DON'T:
-❌ Don't lose your original script (you'll need it for updates)  
-❌ Don't share both obfuscated and deobfuscator with untrusted users  
-❌ Don't rely solely on obfuscation for critical security  
-❌ Don't obfuscate scripts that self-modify  
-❌ Don't expect this to stop expert reverse engineers  
-
----
-
-## 🔧 Technical Details
-
-### Variable Naming Convention
-All obfuscated variables follow the pattern:
-```
-HYDRA_[8 random alphanumeric characters]
-```
-Example: `HYDRA_K7M3P9X2`
-
-### File Size Impact
-- **Basic**: ~30% larger than original
-- **Advanced**: ~40-50% larger than original
-- **Ultra**: ~50-60% larger than original
-
-### Performance Impact
-- **Basic**: Minimal (few milliseconds)
-- **Advanced**: Low (< 100ms for most scripts)
-- **Ultra**: Moderate (< 200ms for most scripts)
-
-### Dependencies
-All required tools are standard in Termux:
-- `base64` - For Base64 encoding/decoding
-- `xxd` - For hexadecimal conversion
-- `rev` - For string reversal
-- `tr` - For character transformation (ROT13)
-
----
-
-## 🐛 Troubleshooting
-
-### Script doesn't run after obfuscation:
-1. Verify original script works: `./original.sh`
-2. Check file permissions: `chmod +x obfuscated.sh`
-3. Ensure all dependencies are installed
-
-### Deobfuscation fails:
-1. Verify file was obfuscated with HYDRA (check for signature)
-2. Ensure file hasn't been manually modified
-3. Check that encoded payload is intact
-
-### "Tampering detected" error:
-- The obfuscated file has been modified
-- Use the original unmodified obfuscated file
-- Or deobfuscate and re-obfuscate
-
----
-
-## 📊 Comparison Table
-
-| Feature | Basic | Advanced | Ultra |
-|---------|-------|----------|-------|
-| Layers | 3 | 5 | 7+ |
-| Speed | ⚡⚡⚡ | ⚡⚡ | ⚡ |
-| Security | ⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| File Size | +30% | +45% | +55% |
-| Anti-Tampering | ❌ | ✅ | ✅✅ |
-| Integrity Check | ❌ | ✅ | ✅✅ |
-| Junk Code | ❌ | ✅ | ✅✅ |
-
----
-
-## 🎓 Example Workflow
+<img align="right" alt="Hacking GIF" width="360" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"/>
 
 ```bash
-# 1. Create your script
-nano myscript.sh
+┌──(HYDRA-TERMUX㉿kali)-[~]
+└─$ whoami
 
-# 2. Make it executable
-chmod +x myscript.sh
+  Name     : Rixon Xavier
+  Alias    : HYDRA-TERMUX
+  Role     : Termux Explorer & Ethical Hacker
+  Status   : Noob → Learning Every Day 🔥
+  Location : India 🇮🇳 (UTC +05:30)
+  Passion  : Breaking things... then fixing them!
+  
+┌──(HYDRA-TERMUX㉿kali)-[~]
+└─$ cat interests.txt
 
-# 3. Test it works
-./myscript.sh
+  🔥  Termux & Linux Scripting
+  🐍  Python & Bash Automation
+  🎯  Cyber Security & Ethical Hacking
+  📡  Network Recon & Pentesting
+  🛠️  Building Open-Source Tools
+  🎥  Creating Tutorials on YouTube
 
-# 4. Obfuscate with HYDRA (Advanced level)
-./hydra_obfuscator.sh myscript.sh
-# Choose option 2 (Advanced)
-
-# 5. Test obfuscated version
-./myscript_hydra.sh
-
-# 6. Later, if you need to modify...
-./hydra_deobfuscator.sh myscript_hydra.sh
-
-# 7. Edit the deobfuscated version
-nano myscript_deobfuscated.sh
-
-# 8. Re-obfuscate
-./hydra_obfuscator.sh myscript_deobfuscated.sh myscript_hydra.sh
+┌──(HYDRA-TERMUX㉿kali)-[~]
+└─$ _
 ```
 
----
-
-## 🔐 Security Notice
-
-⚠️ **IMPORTANT**: This obfuscator provides **protection against casual viewing** and makes reverse engineering **more difficult**, but it is NOT cryptographic security.
-
-**What it's good for:**
-- Hiding API keys from casual viewers
-- Protecting proprietary logic from copy-paste theft
-- Adding a deterrent layer to your scripts
-- Educational purposes
-
-**What it's NOT good for:**
-- Protecting highly sensitive cryptographic keys
-- Preventing determined attackers
-- Replacing proper security measures
-- Compliance with security regulations requiring encryption
+<br clear="both"/>
 
 ---
 
-## 📜 License
+## ⚡ Tech Stack & Arsenal
 
-Free to use and modify for personal and educational purposes.
+<div align="center">
 
-**Created by: HYDRA**
+<!-- Animated tech badges -->
+<img src="https://skillicons.dev/icons?i=linux,python,bash,git,github,vscode,kali,androidstudio&theme=dark&perline=8" />
 
----
+<br/><br/>
 
-## ⚡ Quick Reference
+![Termux](https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=gnubash&logoColor=00ff00)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 
-```bash
-# Obfuscate (Basic)
-./hydra_obfuscator.sh script.sh          # Choose 1
-
-# Obfuscate (Advanced)
-./hydra_obfuscator.sh script.sh          # Choose 2
-
-# Obfuscate (Ultra)
-./hydra_obfuscator.sh script.sh          # Choose 3
-
-# Deobfuscate (Auto-detect)
-./hydra_deobfuscator.sh protected.sh
-```
+</div>
 
 ---
 
-## 🌟 Tips for Maximum Protection
+## 🔥 Featured Projects
 
-1. **Combine protection methods**: Use Ultra obfuscation + file permissions
-2. **Regular rotation**: Re-obfuscate periodically with new random variables
-3. **Split sensitive data**: Don't put all secrets in one script
-4. **Use environment variables**: Store ultra-sensitive data outside the script
-5. **Add decoy code**: Mix in fake API keys or functions before obfuscating
-6. **Never share deobfuscator**: Keep it private if distributing obfuscated scripts
+<div align="center">
+
+<a href="https://github.com/HYDRA-TERMUX/Metahack">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=HYDRA-TERMUX&repo=Metahack&theme=chartreuse-dark&border_color=00ff00&show_icons=true" />
+</a>
+<a href="https://github.com/HYDRA-TERMUX/tubegrab">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=HYDRA-TERMUX&repo=tubegrab&theme=chartreuse-dark&border_color=00ff00&show_icons=true" />
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/HYDRA-TERMUX/ubuntu-termux">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=HYDRA-TERMUX&repo=ubuntu-termux&theme=chartreuse-dark&border_color=00ff00&show_icons=true" />
+</a>
+<a href="https://github.com/HYDRA-TERMUX/Ngrok-H">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=HYDRA-TERMUX&repo=Ngrok-H&theme=chartreuse-dark&border_color=00ff00&show_icons=true" />
+</a>
+
+</div>
 
 ---
 
-**Remember**: Security is layers. HYDRA adds a significant layer, but always use multiple security measures for critical applications.
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=HYDRA-TERMUX&show_icons=true&theme=chartreuse-dark&border_color=00ff00&include_all_commits=true&count_private=true&hide_border=false&custom_title=HYDRA-TERMUX%20Stats" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=HYDRA-TERMUX&theme=chartreuse-dark&border=00ff00&ring=00ff00&fire=ff4400&currStreakLabel=00ff00" />
+
+<br/><br/>
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HYDRA-TERMUX&layout=compact&theme=chartreuse-dark&border_color=00ff00&langs_count=8&custom_title=Most+Used+Languages" />
+<img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=HYDRA-TERMUX&theme=github-compact&color=00ff00&line=00cc00&point=ffffff&area=true&hide_border=false&bg_color=001100" />
+
+</div>
 
 ---
 
-## 📞 Support
+## 🏆 GitHub Trophies
 
-For issues, improvements, or questions, remember:
-- Keep your original scripts safe
-- Test thoroughly before deployment
-- HYDRA protects, but you secure
+<div align="center">
 
-**Stay Protected. Stay HYDRA. 🐍**
+<img src="https://github-profile-trophy.vercel.app/?username=HYDRA-TERMUX&theme=matrix&column=7&margin-w=8&margin-h=8&no-bg=false&no-frame=false&title=Stars,Followers,Commits,Repositories,Issues,PullRequest,Reviews" />
+
+</div>
+
+---
+
+## 📢 Latest Blog Posts
+
+<!-- BLOG-POST-LIST:START -->
+> 📝 [How to Set Up Termux for Ethical Hacking](https://hydratermux.blogspot.com)  
+> 🛠️ [Best Linux Commands for Hackers](https://hydratermux.blogspot.com)  
+> 🔥 [My Noob-to-Pro Journey in Cyber Security](https://hydratermux.blogspot.com)
+<!-- BLOG-POST-LIST:END -->
+
+💡 **Read more at:** [hydratermux.blogspot.com](https://hydratermux.blogspot.com)
+
+---
+
+## 🎥 YouTube Channel
+
+<div align="center">
+
+<a href="https://youtube.com/@HYDRATERMUX">
+  <img src="https://img.shields.io/badge/YouTube-HYDRA--TERMUX-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=CC0000" />
+</a>
+
+</div>
+
+> 🔴 **Termux for Beginners – Full Guide**  
+> 🔥 **Top 5 Hacking Tools for Termux**  
+> 🛠️ **Linux Basics for Hackers**  
+
+---
+
+## 🌍 Connect With Me
+
+<div align="center">
+
+<a href="https://github.com/HYDRA-TERMUX">
+  <img src="https://img.shields.io/badge/GitHub-HYDRA--TERMUX-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://youtube.com/@HYDRATERMUX">
+  <img src="https://img.shields.io/badge/YouTube-@HYDRATERMUX-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://hydratermux.blogspot.com">
+  <img src="https://img.shields.io/badge/Blog-hydratermux-FF5722?style=for-the-badge&logo=blogger&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://t.me/hydratermux">
+  <img src="https://img.shields.io/badge/Telegram-hydratermux-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
+</a>
+&nbsp;
+<a href="https://in.pinterest.com/rixonxavier135/">
+  <img src="https://img.shields.io/badge/Pinterest-rixonxavier135-E60023?style=for-the-badge&logo=pinterest&logoColor=white"/>
+</a>
+
+</div>
+
+---
+
+## 💡 Random Hacker Quote
+
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&quote=The+quieter+you+become%2C+the+more+you+are+able+to+hear&author=Kali+Linux+Motto" />
+
+</div>
+
+---
+
+<div align="center">
+
+<!-- Footer wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:001100,50:008800,100:00ff00&height=120&section=footer&text=Let%27s+Hack+%26+Learn+Together!&fontSize=22&fontColor=00ff00&animation=twinkling&fontAlignY=65" />
+
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=00FF00&center=true&vCenter=true&repeat=true&width=500&lines=Thanks+for+visiting+my+profile!+%F0%9F%90%8D;Don't+forget+to+%E2%AD%90+star+my+repos!;Subscribe+to+my+YouTube+channel!+%F0%9F%94%94;Happy+Hacking!+%F0%9F%94%A5" />
+
+</div>
